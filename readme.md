@@ -51,3 +51,13 @@ if there is ever any request that starts with /api/auth, go and use these auth r
 so api/auth/signin
 
 so api/auth/signup
+
+# httpie
+
+```
+ttp -f POST example.org hello=world
+```
+
+in terminal:
+
+``` http POST localhost:8081/api/auth/signup ```
