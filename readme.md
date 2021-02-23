@@ -61,3 +61,50 @@ ttp -f POST example.org hello=world
 in terminal:
 
 ``` http POST localhost:8081/api/auth/signup ```
+
+# to do, install httpie
+
+failed
+
+need username required etc..
+
+``` http POST localhost:8081/api/auth/signup username=firstuser password=secret email=test@firsttest.com```
+
+{
+    "id": "hash"
+,
+    "token": "hash",
+    "username": "firstuser"
+}
+
+# review
+
+## index.js, load env variables to process.env.____
+
+secret_key
+
+## error.js, key of error object of message
+
+## user.js, user model
+
+mongoose middleware
+
+make sure user entered a password
+
+hash the password
+
+then set the password
+
+if anything goes wrong send it to the error handler
+
+compare password to whatever is inside the database, returns a boolean true or false
+
+## auth.js in handlers folder
+
+simply signed up a User
+
+
+
+
+
+
