@@ -55,7 +55,7 @@ so api/auth/signup
 # httpie
 
 ```
-ttp -f POST example.org hello=world
+http -f POST example.org hello=world
 ```
 
 in terminal:
@@ -102,6 +102,14 @@ compare password to whatever is inside the database, returns a boolean true or f
 ## auth.js in handlers folder
 
 simply signed up a User
+
+created a user 
+
+and created a token
+
+responded with some JSON: id, username, profileImageUrl, token
+
+11000, error code, validation has failed, not unique username, already taken username
 
 
 
